@@ -1,0 +1,525 @@
+/*-------------------------------
+----------- IMPORTS -------------
+-------------------------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:200,300,400,500);
+@import url(responsive.css);
+
+
+/*-------------------------------
+----------- GENERAL SETUP -------
+-------------------------------*/
+
+html, body, h1, h2, h3, h4, h5, h6, p, ul, li, img, input, textarea, a {
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 0.2px;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: 0;
+	font-weight: 400;
+	color: #666;
+	text-decoration: none;
+}
+
+body {
+	font-size: 14px;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+li {
+	list-style: none;
+}
+
+button {
+	outline: none;
+	display: block;
+	box-sizing: content-box;
+	cursor: pointer;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	color: #fff;
+	border: 2px solid #fff;
+	background: rgba(0,0,0,0);
+	padding: 13px;
+}
+
+button h3 {
+	color: #fff;
+	display: inline;
+}
+
+
+button img {
+	margin-left: 15px;
+	margin-top: -10px;
+}
+
+hr {
+	height: 1px;
+	border: 0px;
+	background-color: #e9e8e8;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	line-height: 25px;
+	margin-top: 12px;
+}
+
+h1 {
+	font-size: 39px;
+	font-weight: 200;
+	color: #fff;
+	text-align: center;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: 300;
+}
+
+h3 {
+	font-size: 19px;
+	font-weight: 300;
+}
+
+h4 {
+	font-size: 22px;
+}
+
+h5 {
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+}
+
+img {
+	border: 0;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.container {
+	max-width: 1142px;
+	margin: 0 auto;
+}
+
+
+/*---------------------------------
+------------ NOSCRIPT -------------
+---------------------------------*/
+
+.noscript {
+	background-color: #d34537;
+	color: #fff;
+	text-align: center;
+	padding: 4px;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+
+/*-------------------------------
+------------ HEADER -------------
+-------------------------------*/
+
+header {
+	background: url("../images/bg.png") top center no-repeat #1b242f;
+	height: 736px;
+	width: 100%;
+}
+
+header > img {
+	width: 84px;
+	position: relative;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	margin-top: 280px;
+	margin-bottom: -11px;
+}
+
+#learn-more {
+	margin: 40px auto;
+	text-align: center;
+}
+
+#learn-more:hover {
+	background-color: rgba(30,30,30,0.3);
+}
+
+
+
+/*-----------------------------------
+----------- MAIN NAVIGATION ---------
+-----------------------------------*/
+
+nav {
+	background-color: #1b242f;
+	height: 70px;
+}
+
+.nav-list > li {
+	float: left;
+	margin-left:21px;
+}
+
+.nav-list li a {
+	text-decoration: none;
+	color: #fff;
+	line-height: 70px;
+	margin-right: 18px;
+}
+
+.nav-list li a:hover {
+	color: #888;
+}
+
+.nav-list li .active {
+	color: #e74c3c;
+}
+
+.nav-list li .active:hover {
+	color: #e74c3c;
+}
+
+#envelope {
+	margin-top: 26px;
+	margin-right: 21px;
+	float: right;
+	display: block;
+	width: 25px;
+	height: 20px;
+	background: url("../images/envelope_red.png");
+}
+
+#menu-icon {
+	width: 26px;
+	height: 23px;
+	display: block;
+	margin-left:22px;
+	margin-bottom:47px;
+	position: relative;
+	top:25px;
+	z-index: 2;
+	cursor: pointer;
+}
+
+
+/*--------------------------------
+------------ SERVICES ------------
+--------------------------------*/
+
+#services {
+	margin-top: 67px;
+	margin-bottom: 78px;
+}
+
+#services li {
+	float: left;
+	width: 25%;
+	padding: 10px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+li[id^="services"] div {
+	width: 143px;
+	height: 143px;
+	margin: 10px auto 14px;
+}
+
+#services_responsive div {
+	background: url("../images/services/services_responsive.png");
+}
+
+#services_responsive div:hover {
+	background: url("../images/services/services_responsive_red.png");
+}
+
+#services_web div {
+	background: url("../images/services/services_web.png");
+}
+
+#services_web div:hover {
+	background: url("../images/services/services_web_red.png");
+}
+
+#services_internet div {
+	background: url("../images/services/services_internet.png");
+}
+
+#services_internet div:hover {
+	background: url("../images/services/services_internet_red.png");
+}
+
+#services_ios div {
+	background: url("../images/services/services_ios.png");
+}
+
+#services_ios div:hover {
+	background: url("../images/services/services_ios_red.png");
+}
+
+
+/*------------------------------------
+----------- FEATURE SERVICE ----------
+------------------------------------*/
+
+#feature-service {
+	margin-top: 110px;
+	margin-bottom: 70px;
+}
+
+#read-more {
+	border-color: #e74c3c;
+	background: #e74c3c;
+	margin: 34px 0;
+}
+
+#read-more:hover, #contact button:hover {
+	background-color: #666;
+	border-color: #666;
+}
+
+
+
+/*-------------------------------
+----------- PORTFOLIO -----------
+-------------------------------*/
+
+#portfolio {
+	background-color: #faf8f8;
+	text-align: center;
+	padding-top: 60px;
+}
+
+#portfolio-filter {
+	padding-top: 40px;
+	padding-bottom: 50px;
+	margin: 0 auto;
+}
+
+#portfolio-filter button {
+	border-color: #666;
+	background-color: rgba(0,0,0,0);
+	color: #666;
+	display: inline;
+	margin-left: 7px;
+	padding: 13px 23px;
+}
+
+#portfolio-filter button:not(.current):hover {
+	background-color: #666;
+	color: #fff;
+}	
+
+#portfolio-filter .current {
+	border-color: #d34537;
+	background-color: #d34537;
+	color: #fff;
+}
+
+#portfolio-container {
+	width: 100%;
+	overflow: hidden;
+}
+
+.portfolio-img {
+	/*width: 25%;*/
+	height: auto;
+	margin: 0 0 -3px;
+	z-index: 1;
+	float: left;
+	overflow: hidden;
+}
+
+.portfolio-img > a:first-child {
+    background: url("../images/portfolio_link.png") no-repeat scroll 50% 50%;
+    display: inline-block;
+    height: 82px;
+    left: 50%;
+    margin-top: -46px;
+	margin-left: -35px;
+    opacity: 0;
+    position: absolute;
+    top: 20px;
+    width: 72px;
+    z-index: 10;
+}
+
+.portfolio-img a:hover {
+	background: url("../images/portfolio_link_hover.png") no-repeat scroll 50% 50%;
+}
+
+.portfolio-img i {
+    background: none repeat scroll 0 0 #db4b3e;
+    display: block;
+    font-style: normal;
+    height: 110%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 110%;
+    z-index: 9;
+	overflow: hidden;
+}
+
+.plink {
+	background-color: #222;
+	display: inline-block;
+	width: 100%;
+	color: #fff;
+	border: solid red 2px;
+	z-index: 20;
+}
+
+
+
+/*---------------------------------
+----------- TESTIMONIAL -----------
+---------------------------------*/
+
+#testimonial {
+	background-color: #455261;
+	text-align: center;
+	padding-top: 42px; 
+	padding-bottom: 47px;
+	/*margin-top: -1px;*/
+}
+
+#testimonial > img {
+	padding-bottom: 20px;
+}
+
+#testimonial p, #testimonial h5 {
+	color: #fff;
+	padding-bottom: 10px;
+}
+
+#testimonial-bullets > img {
+	cursor: pointer;
+}
+
+
+
+/*-------------------------------
+----------- CONTACT -------------
+-------------------------------*/
+
+#form-container-left {
+	float:left;
+	width:50%;
+	/*text-align: left;*/
+}
+
+#form-container-right {
+	float:right;
+	width:50%;
+	/*text-align: right;*/
+}
+
+#contact {
+	text-align: center;
+	margin: 36px 0;
+}
+
+#contact p {
+	margin: 31px 0 37px;
+}
+
+#contact input, #contact textarea {
+	width: 95.5%;
+	box-sizing: border-box;
+	padding: 5px 9px;
+	border: 2px solid #e5e5e5;
+    border-radius: 2px;
+	font-size: 14px;
+	color: #444;
+}
+
+#contact input:focus, #contact textarea:focus {
+	outline: none;
+    border-color: #ddd;
+    box-shadow: 0 0 10px #bbb;
+}
+
+#contact input {
+	/*float: left;*/
+	height: 43px;
+}
+
+#contact input:not(:first-child) {
+	margin-top: 20px;
+}
+
+#contact textarea {
+	/*float: right;*/
+	resize: none;
+	height: 169px;
+}
+
+::-webkit-input-placeholder {
+   color: #444;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #444;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #444;  
+}
+
+:-ms-input-placeholder {  
+   color: #444;  
+}
+
+#contact button {
+	border-color: #e74c3c;
+	background: #e74c3c;
+	font-size: 1.2em;
+	margin: 54px auto;
+}
+
+#contact button img {
+	margin-left: 2px;
+	margin-top: 3px;
+}
+
+#contact button > h3 {
+	margin-left: 21px;
+	margin-right: 16px;
+	line-height: 42px;
+	vertical-align: bottom;
+	font-size: 20px;
+	font-weight: thin;
+}
+
+#contact > a {
+	color: #d34537;
+	font-style: normal;
+}
+
+#contact > a:hover {
+	color: #666;
+}
+
+
+/*---------------------------------
+------------- SOCIAL --------------
+---------------------------------*/
+
+#social-icons {
+	margin: -12px 0 31px;
+}
+
+#social-icons li {
+	display: inline;
+	padding: 1.2%;
+}

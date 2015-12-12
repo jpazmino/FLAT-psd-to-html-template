@@ -1,0 +1,170 @@
+/*---------------------------------
+----------- RESPONSIVE ------------
+---------------------------------*/
+
+@media only screen and (min-width: 1025px) {
+	#feature-image {
+		float: left;
+		max-width: 50%;
+	}
+
+	#feature-description {
+		margin-top: 20px;
+		float: right;
+		max-width: 50%;
+	}
+	
+	.portfolio-img {
+		width: 25%;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	#feature-image {
+		text-align: center;
+	}
+	
+	#feature-image img {
+		width: 400px;
+		margin: -30px auto 30px;
+	}
+	
+	#feature-description {
+		padding: 0 6%;
+		text-align: center;
+	}
+	
+	#feature-description > button {
+		margin: 30px auto 0;
+	}
+	
+	#portfolio p {
+		padding: 0 6%;
+	}
+	
+	.portfolio-img {
+		width: 33%;	
+	}
+	
+	#contact {
+		padding: 0 6%;
+	}
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+	#services li {
+		width: 50%;
+		margin-bottom: 40px;
+	}	
+}
+
+
+@media only screen and (min-width: 767px) {
+	#menu-icon {
+		display: none;
+	}
+	
+	#envelope-mobile {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 766px) {
+	#envelope {
+		height: 1px;
+		width: 1px;
+		cursor: default;
+		background: #fff;
+	}
+	
+	#envelope-mobile {
+		position: relative;
+		top: -43px;
+		left: -20px;
+		float: right;
+	}
+	
+	#services li {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	
+	#portfolio-filter > button {
+		margin-bottom: 15px;
+	}
+	
+	.nav-list {
+		position: relative;
+		top: -20px;
+		display: none;
+	}
+	
+	.nav-list > li {
+		background-color: #304054;
+		float: none;
+		width: 100%;
+		position: relative;
+		left: -21px;
+		overflow: hidden;
+	}
+	
+	.nav-list > li:hover {
+		background-color: #222;
+	}
+	
+	.nav-list > li a {
+		margin-left: 27px;
+	}
+	
+	#contact input, #contact textarea {
+		width: 100%;
+		float: none;
+	}
+	
+	#form-container-left, #form-container-right {
+		float: none;
+		width:100%;
+	}
+	
+	textarea {
+		margin-top: 23px;
+	}
+}
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 766px) {
+	.portfolio-img {
+		width: 50%;
+	}
+	
+	#feature-image img {
+		width: 400px;
+		margin: -30px auto 30px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	#feature-image img {
+		width: 82%;
+		margin: -30px auto 30px;
+	}
+	
+	#portfolio-filter > button  {
+		margin: 0 15px 12px;
+	}
+	
+	.portfolio-img {
+		width: 100%;
+		display: block;
+		margin-bottom: -5px;
+	}
+	
+	header {
+		height: 60%;
+	}
+	
+	header > img {
+		margin-top: 65%;
+	}
+}
